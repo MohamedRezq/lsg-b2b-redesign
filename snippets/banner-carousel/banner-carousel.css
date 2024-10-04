@@ -1,0 +1,95 @@
+/* Banner Carousel container */
+.home-banner-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.home-banner-carousel-inner {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.home-banner-carousel-item {
+  min-width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.home-banner-carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.home-banner-carousel-item.active {
+  display: block;
+}
+
+/* Dots navigation */
+.home-banner-dots-navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.home-banner-dot {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home-banner-dot.active {
+  background-color: white;
+}
+
+/* Left and right navigation buttons */
+.home-banner-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-control {
+  left: 10px;
+  font-size: medium;
+  border-radius: 9999px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-control {
+  right: 10px;
+  font-size: medium;
+  border-radius: 9999px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-banner-control:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
