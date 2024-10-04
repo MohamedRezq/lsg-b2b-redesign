@@ -16,6 +16,15 @@
           });
       });
     </script>
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="./snippets/categories-carousel/categories-carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./snippets/banner-carousel/banner-carousel.css"
+    />
   </head>
 
   <body>
@@ -23,6 +32,15 @@
     <div id="header-placeholder"></div>
 
     <!-- Main Content -->
+    <main
+      style="max-width: 1200px"
+      class="mx-auto px-3 lg:px-0 mt-1 mb-20 overflow-hidden"
+    >
+      <!-- Categories Slider PlaceHolder -->
+      <div id="categories-slider-placeholder"></div>
+      <!-- Banner Carousel PlaceHolder -->
+      <div id="banner-carousel-placeholder"></div>
+    </main>
 
     <!-- Footer PlaceHolder -->
     <div id="footer-placeholder"></div>
@@ -46,10 +64,27 @@
           // Load header
           const headerResponse = await fetch("./snippets/header/header.html");
           const headerData = await headerResponse.text();
+          document.getElementById("header-placeholder").outerHTML = headerData;
+
+          // Load categories slider
+          const categoriesSliderResponse = await fetch(
+            "/snippets/categories-carousel/categories-carousel.html"
+          );
+          const categoriesSliderData = await categoriesSliderResponse.text();
+          document.getElementById("categories-slider-placeholder").outerHTML =
+            categoriesSliderData;
+
+          // Load banner carousel
+          const bannerCarouselResponse = await fetch(
+            "/snippets/banner-carousel/banner-carousel.html"
+          );
+          const bannerCarouselData = await bannerCarouselResponse.text();
+          document.getElementById("banner-carousel-placeholder").outerHTML =
+            bannerCarouselData;
+
           // Load footer
           const footerResponse = await fetch("./snippets/footer/footer.html");
           const footerData = await footerResponse.text();
-          document.getElementById("header-placeholder").outerHTML = headerData;
           document.getElementById("footer-placeholder").outerHTML = footerData;
         } catch (error) {
           console.error("Error loading components:", error);
@@ -75,6 +110,10 @@
         // After loadComponents is done, load the other scripts
         try {
           await loadScript("./snippets/header/header.js");
+          await loadScript(
+            "./snippets/categories-carousel/categories-carousel.js"
+          );
+          await loadScript("./snippets/banner-carousel/banner-carousel.js");
           console.log("All scripts loaded successfully");
         } catch (error) {
           console.error("Error loading external scripts:", error);

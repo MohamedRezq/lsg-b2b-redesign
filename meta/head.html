@@ -94,6 +94,25 @@
     color: #333333;
   }
 
+  main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px; /* Equivalent to px-3 (Bootstrap 3.3.7 uses 15px for .px-3) */
+    padding-right: 15px;
+    margin-top: 4px; /* Equivalent to mt-1 (1 * 4px = 4px for Bootstrap 3) */
+    margin-bottom: 80px; /* Equivalent to mb-20 (20 * 4px = 80px for Bootstrap 3) */
+    overflow: hidden;
+  }
+
+  @media (min-width: 992px) {
+    /* Equivalent to lg: (min-width: 992px) */
+    main {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .fas {
     color: #333333;
   }
