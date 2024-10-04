@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lightspeed Global - Model Kits, Paints, and More</title>
+    <meta
+      name="description"
+      content="Lightspeed Global is your destination for high-quality paints, finishing products, tools, and supplies. Explore a vast range of model kits, including wargames, puzzles, toys, and more."
+    />
+    <!-- Placeholder for common head content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/meta/head.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.head.innerHTML = data + document.head.innerHTML;
+          });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Header PlaceHolder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+
+    <!-- Footer PlaceHolder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+      // Define the `isAdmin` flag
+      const isAdmin = true; // Change to false if the user is not an admin
+
+      // Define an async function to handle the sequential loading
+      async function loadComponents() {
+        try {
+          // Load header
+          const headerResponse = await fetch("./snippets/header/header.html");
+          const headerData = await headerResponse.text();
+          // Load footer
+          const footerResponse = await fetch("./snippets/footer/footer.html");
+          const footerData = await footerResponse.text();
+          document.getElementById("header-placeholder").outerHTML = headerData;
+          document.getElementById("footer-placeholder").outerHTML = footerData;
+        } catch (error) {
+          console.error("Error loading components:", error);
+        }
+      }
+
+      // Helper function to dynamically load external scripts
+      function loadScript(src) {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = src;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.body.appendChild(script);
+        });
+      }
+
+      // Call the function on DOM content loaded
+      document.addEventListener("DOMContentLoaded", async function () {
+        // First, wait for the components to load
+        await loadComponents();
+
+        // After loadComponents is done, load the other scripts
+        try {
+          await loadScript("./snippets/header/header.js");
+          console.log("All scripts loaded successfully");
+        } catch (error) {
+          console.error("Error loading external scripts:", error);
+        }
+      });
+    </script>
+  </body>
+</html>

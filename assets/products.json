@@ -1,0 +1,185 @@
+[
+  {
+    "id": 1,
+    "name": "Bandai Zeta Gundam",
+    "sku": "BNDAI-2615240",
+    "mfgCode": "2615240",
+    "upc": "4573102640154",
+    "category": "Gundam",
+    "description": "Aircraft of the Spanish Civil War 1936-1939",
+    "scale": "1:100",
+    "netPrice": "$5656.21",
+    "srp": "$7474.99",
+    "stock": { "toronto": 6, "phoenix": 0 },
+    "image": "https://images.lsghobby.com/BNDAI-2615240/thumbnail/thumb_BNDAI-2615240.jpg",
+    "eta": "ETA: 2024-Dec",
+    "reserve": "Reserve on PO #1234",
+    "discount": "-20%",
+    "finalPrice": "$4444.97",
+    "lastPurchased": "Last Purchased: Jul 31, 2024",
+    "backOrdered": "Back Ordered: 1",
+    "moq": "MOQ: 2",
+    "images": [
+      "https://images.lsghobby.com/KOTO-PV211/011.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/010.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/011.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/013.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/014.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/011.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/010.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/011.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/013.jpg"
+    ],
+    "specifications": {
+      "Height": "8.00 in",
+      "Length": "8.00 in",
+      "Width": "11.00 in",
+      "Weight": "1.5 lbs",
+      "Material": "PVC"
+    },
+    "details": "Accompanied by his Black Dragon, Hiei has been updated!\n\nFrom the classic anime Yu☆Yu☆Hakusho comes a fully redone, new version of the Jagan eye user, Hiei! Modeled after his look in the popular Dark Tournament Saga, the posing and detailing on this figure have been greatly updated from the previous version. All four of the Team Urameshi members have also received a dynamic new effect base that reflects their respective fighting styles. His handsome looks, iconic hairstyle, and slender but muscular physique are all also on full display in this figure. To cap things off, rising from the base is Hiei's ultimate technique, Dragon of the Darkness Flame. The design creates a simultaneously beautiful and ominous look that changes with the angle and lighting."
+  },
+  {
+    "id": 2,
+    "name": "Abteilung502 Soviet Armored Forces",
+    "sku": "AK-ABT610-ES",
+    "mfgCode": "ABT610",
+    "upc": "8435568312739",
+    "category": "Books",
+    "description": "The Soviet Armoured Forces (1939-1945) (Spanish)",
+    "scale": "",
+    "netPrice": "$36.75",
+    "srp": "$61.99",
+    "stock": { "toronto": 0, "phoenix": 0 },
+    "image": "https://images.lsghobby.com/AK-ABT610-ES/thumbnail/thumb_AK-ABT610-ES.jpg",
+    "images": [
+      "https://images.lsghobby.com/AK-ABT610-ES/011.jpg",
+      "https://images.lsghobby.com/AK-ABT610-ES/012.jpg"
+    ],
+    "specifications": {
+      "Pages": "256",
+      "Language": "Spanish",
+      "Format": "Hardcover",
+      "Dimensions": "9 x 12 inches",
+      "Weight": "2 lbs"
+    },
+    "tag": "Special Order",
+    "details": "This book provides a detailed overview of the Soviet Armoured Forces between 1939-1945. It is filled with historical information, wartime photographs, and analytical essays that cover Soviet military tactics, tank designs, and more. The book is a must-have for military historians and enthusiasts."
+  },
+  {
+    "id": 3,
+    "name": "Bandai Zeta Gundam",
+    "sku": "BNDAI-2615240",
+    "description": "Aircraft of the Spanish Civil War 1936-1939",
+    "scale": "1:100",
+    "netPrice": "$5656.21",
+    "stock": { "toronto": 6, "phoenix": 0 },
+    "image": "https://images.lsghobby.com/BNDAI-2615240/thumbnail/thumb_BNDAI-2615240.jpg",
+    "lastPurchased": "Last Purchased: Jul 31, 2024",
+    "images": [
+      "https://images.lsghobby.com/KOTO-PV211/011.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/010.jpg"
+    ],
+    "specifications": {
+      "Height": "8.00 in",
+      "Length": "8.00 in",
+      "Width": "11.00 in",
+      "Weight": "1.5 lbs",
+      "Material": "PVC"
+    },
+    "details": "Accompanied by his Black Dragon, Hiei has been updated!\n\nFrom the classic anime Yu☆Yu☆Hakusho comes a fully redone, new version of the Jagan eye user, Hiei! Modeled after his look in the popular Dark Tournament Saga, the posing and detailing on this figure have been greatly updated from the previous version. All four of the Team Urameshi members have also received a dynamic new effect base that reflects their respective fighting styles. His handsome looks, iconic hairstyle, and slender but muscular physique are all also on full display in this figure. To cap things off, rising from the base is Hiei's ultimate technique, Dragon of the Darkness Flame. The design creates a simultaneously beautiful and ominous look that changes with the angle and lighting."
+  },
+  {
+    "id": 4,
+    "name": "Kotobukiya 1/8 Yu☆Yu☆Hakusho",
+    "sku": "KOTO-PV211",
+    "mfgCode": "PV211",
+    "upc": "4934054058655",
+    "category": "Statue",
+    "description": "Kotobukiya 1/8 Yu☆Yu☆Hakusho, ARTFX J Hiei Ver.2",
+    "scale": "1:8",
+    "netPrice": "$143.19",
+    "srp": "$178.99",
+    "stock": { "toronto": 3, "phoenix": 1 },
+    "image": "https://images.lsghobby.com/KOTO-PV211/thumbnail/thumb_KOTO-PV211.jpg",
+    "discount": "-20%",
+    "finalPrice": "$114.55",
+    "lastPurchased": "Last Purchased: Jul 31, 2024",
+    "backOrdered": "Back Ordered: 1",
+    "moq": "MOQ: 2",
+    "images": [
+      "https://images.lsghobby.com/KOTO-PV211/011.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/012.jpg",
+      "https://images.lsghobby.com/KOTO-PV211/013.jpg"
+    ],
+    "specifications": {
+      "Height": "8.00 in",
+      "Length": "8.00 in",
+      "Width": "11.00 in",
+      "Weight": "1.5 lbs",
+      "Material": "PVC"
+    },
+    "tag": "Special Order",
+    "details": "From the Dark Tournament Saga, this Hiei figure brings incredible detail and dynamic design to the iconic character. With his signature Dragon of the Darkness Flame technique rising from the base, this is a must-have piece for Yu☆Yu☆Hakusho fans."
+  },
+  {
+    "id": 5,
+    "name": "Sova-M 1/72 BB-19",
+    "sku": "SVM-72071",
+    "mfgCode": "SVM-72071",
+    "upc": "3800237897131",
+    "category": "Aircraft Kits",
+    "description": "Sova-M 1/72 BB-19 'Boomin Beaver' (Security tug boat)",
+    "scale": "1:72",
+    "netPrice": "$45.89",
+    "srp": "$50.99",
+    "stock": { "toronto": 5, "phoenix": 2 },
+    "image": "https://images.lsghobby.com/SVM-72071/thumbnail/thumb_SVM-72071.jpg",
+    "eta": "ETA: 2024-Nov",
+    "reserve": "Reserve on PO #5678",
+    "discount": "-10%",
+    "finalPrice": "$41.30",
+    "images": [
+      "https://images.lsghobby.com/SVM-72071/001.jpg",
+      "https://images.lsghobby.com/SVM-72071/002.jpg"
+    ],
+    "specifications": {
+      "Length": "5.5 in",
+      "Width": "1.5 in",
+      "Height": "2.5 in",
+      "Material": "Plastic"
+    },
+    "tag": "New",
+    "details": "This 1/72 scale kit of the BB-19 'Boomin Beaver' is perfect for aircraft kit builders and hobbyists. The model captures the tug boat’s intricate details and is ideal for display or collection."
+  },
+  {
+    "id": 6,
+    "name": "PROOF Kono Subarashii Sekai Ni Syukufuku Wo!",
+    "sku": "GSC-PR82118",
+    "mfgCode": "PR82118",
+    "upc": "4582666821183",
+    "category": "Figures",
+    "description": "PROOF Kono Subarashii Sekai Ni Syukufuku Wo! 3 Series Darkness Fairy Tale Ver. 1/7 Scale Figure",
+    "scale": "1:7",
+    "netPrice": "$245.80",
+    "srp": "$289.18",
+    "stock": { "toronto": 2, "phoenix": 0 },
+    "image": "https://images.lsghobby.com/GSC-PR82118/thumbnail/thumb_GSC-PR82118.jpg",
+    "discount": "-15%",
+    "finalPrice": "$208.93",
+    "lastPurchased": "Last Purchased: Jul 31, 2024",
+    "backOrdered": "Back Ordered: 1",
+    "moq": "MOQ: 2",
+    "images": [
+      "https://images.lsghobby.com/GSC-PR82118/001.jpg",
+      "https://images.lsghobby.com/GSC-PR82118/002.jpg"
+    ],
+    "specifications": {
+      "Height": "10.00 in",
+      "Material": "ABS, PVC",
+      "Weight": "2 lbs"
+    },
+    "tag": "Discontinued",
+    "details": "From the popular 'KonoSuba' series, this Darkness Fairy Tale version is a highly detailed 1/7 scale figure that captures the essence of the character. A unique collectible for KonoSuba fans."
+  }
+]

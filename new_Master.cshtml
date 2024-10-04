@@ -1,0 +1,113 @@
+<!-- Header Section -->
+<header class="header-container">
+  <div class="header-content">
+    <div class="logo-menu">
+      <!-- Hamburger Menu for Mobile with Alpine.js -->
+      <div x-data="{ open: false }" class="hamburger-menu">
+        <button @click="open = !open" class="menu-button">
+          <i :class="open ? 'fas fa-times' : 'fas fa-bars'"></i>
+        </button>
+
+        <!-- Mobile Menu -->
+        <nav x-show="open" @click.away="open = false" class="mobile-nav">
+          <div class="mobile-nav-content">
+            <div class="search-bar mobile-search">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search over 1,000,000 products by description, brand, SKU, etc.."
+              />
+              <button class="search-button">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </div>
+            <ul class="mobile-nav-links">
+              @if (!User.Identity.IsAuthenticated)
+              {
+                  <li><a href="/account/register">Create an account</a></li>
+                  <li><a href="/account/login">Login</a></li>
+              }
+            </ul>
+            <ul class="mobile-nav-menu">
+              <li><a href="/blog/">BLOG</a></li>
+              <li><a href="/new/">NEW</a></li>
+              @if (User.Identity.IsAuthenticated)
+              {
+                  <li><a href="/reserve/reservations">RESERVE</a></li>
+                  <li><a href="/Clearance">FEATURED DEALS</a></li>
+              }
+              <li><a href="/product/search">PRODUCTS</a></li>
+              <li><a href="/home/about/">ABOUT</a></li>
+              <li><a href="/home/faq/">FAQ</a></li>
+              <li><a href="/contact">CONTACT US</a></li>
+            </ul>
+          </div>
+          <p class="mobile-nav-footer">
+            &copy; 2024 Lightspeed Global. All rights reserved.
+          </p>
+        </nav>
+      </div>
+
+      <!-- Logo -->
+      <a href="/">
+        <img
+          src="/css/Content/img/header.lsg.png"
+          alt="Lightspeed Global Logo"
+          class="logo"
+        />
+      </a>
+    </div>
+
+    <!-- Search Bar (for desktop) -->
+    <div class="search-bar desktop-search">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search over 1,000,000 products by description, brand, SKU, etc.."
+      />
+      <button class="search-button">
+        <i class="fas fa-search fa-lg"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Icons for Favorites, Cart, etc. -->
+  <div class="nav-icons">
+    <div class="account-links">
+      @if (!User.Identity.IsAuthenticated)
+      {
+          <a href="/account/register">Create an account</a>
+          <a href="/account/login">Login</a>
+      }
+    </div>
+    <a href="/wishlist" class="icon-link">
+      <i class="fas fa-heart"></i>
+      <span class="icon-badge">12</span>
+    </a>
+    <a href="/cart" class="icon-link">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="icon-badge">12</span>
+    </a>
+  </div>
+</header>
+
+<!-- Full-screen Navigation Bar for Desktop -->
+<div class="desktop-navbar">
+  <nav class="desktop-nav-container">
+    <ul class="nav-menu">
+      <li><a href="/blog/" class="nav-link">BLOG</a></li>
+      <li><a href="/new/" class="nav-link">NEW</a></li>
+      @if (User.Identity.IsAuthenticated)
+      {
+          <li><a href="/reserve/reservations" class="nav-link">RESERVE</a></li>
+          <li><a href="/Clearance" class="nav-link">FEATURED DEALS</a></li>
+      }
+      <li><a href="/product/search" class="nav-link">PRODUCTS</a></li>
+      <li><a href="/home/about/" class="nav-link">ABOUT</a></li>
+      <li><a href="/home/faq/" class="nav-link">FAQ</a></li>
+    </ul>
+    <ul class="nav-menu contact-menu">
+      <li><a href="/contact" class="nav-link">CONTACT US</a></li>
+    </ul>
+  </nav>
+</div>
