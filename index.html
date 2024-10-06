@@ -25,6 +25,10 @@
       rel="stylesheet"
       href="./snippets/banner-carousel/banner-carousel.css"
     />
+    <link
+      rel="stylesheet"
+      href="./snippets/images-carousel/images-carousel.css"
+    />
   </head>
 
   <body>
@@ -40,6 +44,8 @@
       <div id="categories-slider-placeholder"></div>
       <!-- Banner Carousel PlaceHolder -->
       <div id="banner-carousel-placeholder"></div>
+      <!-- Images Carousel PlaceHolder -->
+      <div id="images-carousel-placeholder"></div>
     </main>
 
     <!-- Footer PlaceHolder -->
@@ -82,6 +88,14 @@
           document.getElementById("banner-carousel-placeholder").outerHTML =
             bannerCarouselData;
 
+          // Load images carousel
+          const imagesCarouselResponse = await fetch(
+            "/snippets/images-carousel/images-carousel.html"
+          );
+          const imagesCarouselData = await imagesCarouselResponse.text();
+          document.getElementById("images-carousel-placeholder").outerHTML =
+            imagesCarouselData;
+
           // Load footer
           const footerResponse = await fetch("./snippets/footer/footer.html");
           const footerData = await footerResponse.text();
@@ -114,6 +128,7 @@
             "./snippets/categories-carousel/categories-carousel.js"
           );
           await loadScript("./snippets/banner-carousel/banner-carousel.js");
+          await loadScript("./snippets/images-carousel/images-carousel.js");
           console.log("All scripts loaded successfully");
         } catch (error) {
           console.error("Error loading external scripts:", error);
