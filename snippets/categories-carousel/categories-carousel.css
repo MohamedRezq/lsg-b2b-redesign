@@ -39,6 +39,17 @@
   font-weight: 600;
 }
 
+.home-category a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: center;
+}
+
+.home-category a:hover {
+  opacity: 0.8; /* Optional: Add hover effect */
+}
+
 /* Navigation buttons */
 .home-categories-control {
   position: absolute;

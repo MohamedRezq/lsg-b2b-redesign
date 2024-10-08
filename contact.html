@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us - Lightspeed Global - Model Kits, Paints, and More</title>
+    <meta
+      name="description"
+      content="Lightspeed Global is your destination for high-quality paints, finishing products, tools, and supplies. Explore a vast range of model kits, including wargames, puzzles, toys, and more."
+    />
+    <!-- Placeholder for common head content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/meta/head.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.head.innerHTML = data + document.head.innerHTML;
+          });
+      });
+    </script>
+    <style>
+      /* Layout styles */
+      .contact-page-form-container,
+      .contact-page-office-info-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-page-form-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      @media (min-width: 768px) {
+        .contact-page-form-section {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .contact-page-form-container form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-page-form-container label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .contact-page-form-container input,
+      .contact-page-form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .contact-page-form-container button {
+        background-color: #e0a20f;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .contact-page-form-container button:hover {
+        background-color: #ffd700;
+      }
+
+      .contact-page-map-container iframe {
+        width: 100%;
+        height: 400px;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 50px;
+      }
+
+      .contact-page-contact-info {
+        margin-top: 20px;
+      }
+
+      .contact-page-contact-info h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .contact-page-contact-info p {
+        margin-bottom: 0.5rem;
+      }
+
+      .contact-page-map-title {
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: bold;
+        margin: 80px 0 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header PlaceHolder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Page Title -->
+      <section class="contact-page-title-section">
+        <h1 class="text-center">Contact Us</h1>
+      </section>
+
+      <!-- Contact Form and Address Section -->
+      <div class="contact-page-form-section">
+        <!-- Contact Form -->
+        <div class="contact-page-form-container">
+          <form action="#" method="POST">
+            <!-- Name Input -->
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+
+            <!-- Email Input -->
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email address"
+                required
+              />
+            </div>
+
+            <!-- Message Textarea -->
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                placeholder="Your message"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Address and Contact Information -->
+        <div class="contact-page-office-info-container">
+          <div class="contact-page-contact-info">
+            <h2>Our Canada Office</h2>
+            <p>
+              <strong>Mailing Address:</strong> 340 King Street East, 4th
+              Floor<br />Toronto, ON M5A 1K8, Canada
+            </p>
+            <p><strong>Phone:</strong> 647-812-1951</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:care@lsghobby.com">care@lsghobby.com</a>
+            </p>
+          </div>
+
+          <div class="contact-page-contact-info">
+            <h2>Our USA Office</h2>
+            <p>
+              <strong>Mailing Address:</strong> 1205 N Eliseo Felix Jr Way, Ste
+              A110<br />Avondale, AZ 85323, USA
+            </p>
+            <p><strong>Phone:</strong> 716-246-0520</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:care@lsghobby.com">care@lsghobby.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <h2 class="contact-page-map-title">Find Us on the Map</h2>
+      <div class="contact-page-map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23084.144374354993!2d-79.58823255177506!3d43.67899233725372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b39965b000001%3A0x874fddd6335a4400!2sLightspeed%20Global!5e0!3m2!1sen!2seg!4v1726773502419!5m2!1sen!2seg"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </main>
+
+    <!-- Footer PlaceHolder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script>
+      // Define the `isAdmin` flag
+      const isAdmin = true; // Change to false if the user is not an admin
+
+      // Define an async function to handle the sequential loading
+      async function loadComponents() {
+        try {
+          // Load header
+          const headerResponse = await fetch("/snippets/header/header.html");
+          const headerData = await headerResponse.text();
+          document.getElementById("header-placeholder").outerHTML = headerData;
+
+          // Load footer
+          const footerResponse = await fetch("/snippets/footer/footer.html");
+          const footerData = await footerResponse.text();
+          document.getElementById("footer-placeholder").outerHTML = footerData;
+        } catch (error) {
+          console.error("Error loading components:", error);
+        }
+      }
+
+      // Helper function to dynamically load external scripts
+      function loadScript(src) {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = src;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.body.appendChild(script);
+        });
+      }
+
+      // Call the function on DOM content loaded
+      document.addEventListener("DOMContentLoaded", async function () {
+        // First, wait for the components to load
+        await loadComponents();
+
+        // After loadComponents is done, load the other scripts
+        try {
+          await loadScript("/snippets/header/header.js");
+          console.log("All scripts loaded successfully");
+        } catch (error) {
+          console.error("Error loading external scripts:", error);
+        }
+      });
+    </script>
+  </body>
+</html>
